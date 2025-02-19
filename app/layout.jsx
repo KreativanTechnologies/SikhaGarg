@@ -18,9 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
+          <div className="relative flex min-h-screen flex-col  ">
+         <div className="w-[90%] mx-auto">
+         <SiteHeader />
+         <main className="flex-1 ">{children}</main>
+         </div>
             <SiteFooter />
           </div>
         </ThemeProvider>
